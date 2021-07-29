@@ -1,0 +1,248 @@
+html {
+	font-size: 62.5%;
+    background-color: white;
+    color: white;
+}
+
+/* mobile first css */
+body {
+    font-family:'PT Sans', sans-serif;
+    font-size: 1.8rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+    font-family: 'Open Sans', sans-serif;
+}
+.contact-us {
+    background-color: #163057;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+
+h3{
+    font-size: 3.125rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+header {
+	background-color: #151515;
+	padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: block; /* This allows the clickable area to take up the full space of the li */
+
+}
+
+
+.menu a:hover,
+.menu a:active {
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+.toggle-btn {
+    border: none;
+    background-color: #151515;
+    outline: none; /*focus set on outline: provides visual feedback for keyboard navigation */
+}
+
+.toggle-btn:hover {
+    cursor: pointer; /*To help people understand that this is a piece of navigation */
+}
+
+svg rect {
+    fill: #e60000;
+}
+
+.menu li {
+    line-height: 4rem; /* lets the content: set the height of the container. */
+    text-align: center;
+    }
+
+header nav {
+    position: absolute;
+    top: 6.6rem;
+    left: 0;
+
+    /* background-color: #ffffff; */
+    width: 100vw; /*(100% of the viewport width)*/
+	max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    color: white;
+}
+
+ul.menu{
+    padding-bottom: 1rem;
+}
+
+/*    Is the extra class that we call from the JS and is toggled by the method classList*/
+.show-nav {
+    max-height: 30rem;
+}
+
+.contact-us .banner{
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../img/contact-us-mobile.jpg");
+    height: 425px;
+    background-repeat: no-repeat;
+}
+
+.contact-us .banner .text-container {
+    padding-top: 30%;
+    padding-bottom: 30%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.banner .text-container h2{
+    font-size: 3.906rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+    background-image: url("../img/diagmonds-lightened.jpg");
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+footer h2 {
+    padding-bottom: 2rem;
+}
+footer img{
+    padding-bottom: 3rem;
+}
+
+footer ul svg{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    overflow: hidden;
+}
+/* footer ul{
+    text-align: center;
+}
+
+footer ul svg{
+    display: inline;
+} 
+
+/* footer ul>div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} */
+
+
+/* ************************* section ****************** */
+
+
+@media only screen and (min-width: 750px) {
+    .contact-us .banner{
+        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../img/contact-us-tablet.webp");
+        height: 500px;
+        background-repeat: no-repeat;
+    }
+    
+    .contact-us .banner .text-container {
+        /* padding-top: 20%;
+        padding-bottom: 20%;
+        width: 42rem; */
+        width: 42rem;
+        position: absolute;
+        top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+
+    footer {
+        justify-content: space-between;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+/*    constrains the viewport on larger screens by center aligning the content where users like to see it in the middle    */
+   .contact-us {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /*        Hide the toggle button in the tablet and desktop views - there is enough room on the screen to see the navigation now.*/
+        .toggle-btn {
+            display: none;
+        }
+/*        Max height indicates that it can be less than 30rem but never larger*/
+        header nav {
+            max-height: 30rem;
+            position: static; /*Reset the absolute back to the default static*/
+            width: 60%; /*reset - previously was set to 100vw*/
+            overflow: visible;
+        }
+
+        .menu,
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul.menu li {
+/*            The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.*/
+            flex-grow: 1;
+            flex-shrink: 0; /* Required to use flex-basis */
+/*            The flex-basis property specifies the initial length of a flexible item.*/
+            flex-basis: auto;
+            
+        }
+
+        .menu li a {
+            padding: 0.5rem; 
+       }
+
+       .contact-us .banner{
+        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../img/contact-us-desktop.webp");
+        height: 530px;
+    }
+
+    .contact-us .banner .text-container {
+        /* padding-top: 20%;
+        padding-bottom: 20%;
+        width: 42rem; */
+        width: 73rem;
+       
+    }
+}

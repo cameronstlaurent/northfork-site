@@ -1,0 +1,583 @@
+html {
+	font-size: 62.5%;
+	color: white;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+	margin: 0 auto;
+	font-size: 1.8rem;
+	line-height: 1.25;
+}
+/*typography*/
+.banner h2 {
+	font-size: 3.906rem;
+	text-align: center;
+}
+h2 {
+	font-size: 3.125rem;
+}
+.banner h2 {
+	font-size: 3.906rem;
+}
+.home-main h2, .gallery-main .img-container p, .gallery-main section h2, .about-us-main h2, .about-us-main h3{
+	text-align: center;
+}
+h3, .btn {
+	font-size: 2rem;
+}
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	padding-bottom: 2rem;
+}
+/*general styling*/
+main{
+	background-color: #163057;
+}
+header img {
+	max-width: 90%;
+	height: auto;
+}
+.wrapper {
+	padding: 0 4%;
+}
+.responsive {
+	max-width: 100%;
+	height: auto;
+}
+.office-container {
+	padding: 2rem 0 5rem 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.home-main .sec-1, .home-main .sec-3, .about-us-main .sec-1, .about-us-main .sec-3 {
+	padding: 5rem 0;
+}
+.btn, input[type=submit] {
+	background-color: #e60000;
+	color: #f8f8ff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	border: none;
+	font-size: 2rem;
+	border-radius: 10px;
+	width: 16rem;
+	text-align: center;
+	display: block;
+	margin: 3rem auto 0 auto;
+	text-decoration: none;
+	line-height: 2;
+}
+/*hover effects*/
+.btn p:hover, .form-btn:hover{
+	color: #e60000;
+	background-color: #f8f8ff;
+	cursor: pointer;
+	border-radius: 10px;
+}
+/*banner styling*/
+.banner {
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 43rem;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.contact-main .banner {
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/contact-us-mobile.webp");
+}
+.home-main .banner {
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/home-banner-desktop.jpg");
+}
+.services-main .banner {
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/services-banner-mobile.webp");
+}
+.gallery-main .banner{
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/contact-us-mobile.webp");
+}
+.about-us-main .banner {
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/contact-us-mobile.webp");
+}
+.banner div:first-child {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 92%;
+	justify-content: center;
+	align-items: center;
+	padding: 0 4%;
+}
+
+/* header styling*/
+header {
+	background-color: #151515;
+}
+header .flex-container {
+	display: flex;
+	align-items: center;
+	padding: 3rem 4%;
+	justify-content: space-between;
+}
+header nav {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.7s ease-in-out;
+}
+header a {
+	color: #151515;
+	text-decoration: none;
+	display: block;
+	padding: 0;
+}
+.toggle-btn {
+	border: none;
+	background-color: #151515;
+	outline: none;
+}
+.toggle-btn:hover {
+	cursor: pointer;
+}
+svg rect {
+	fill: #e60000;
+}
+.show-nav {
+	max-height: 600px;
+}
+.hidden {
+	display: none;
+}
+.menu li {
+	line-height: 6.7rem;
+	background-image: url("../img/dust_scratches.png");
+	color: #151515;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0 4%;
+	font-weight: 600;
+	border-bottom: 1px solid #151515;
+}
+/*home page styling*/
+.home-main .sec-1, .home-main .sec-3, .about-us-main .sec-1, .about-us-main .sec-3 {
+	padding: 5rem 0;
+}
+.service-container .text-container {
+	padding-top: 5rem;
+}
+.service-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.home-main img {
+	max-width: 100%;
+}
+.home-main h4 {
+	padding: 2rem 0;
+	font-size: 2rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+.home-main .sec-3 h2{
+	padding-top: 5rem;
+}
+.why{
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/why-mobile.jpg");
+	padding: 0 4%;
+	background-repeat: no-repeat;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.why ul li{
+	line-height: 3;
+}
+.home-main .sec-3 .flex-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+/*services page styling*/
+.services-main article{
+	padding: 5rem 4%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.services-main img{
+	max-width: 100%;
+	padding-bottom: 3rem;
+}
+.services-main .row:nth-child(3), .services-main .row:last-child{
+	background-image: url("../img/dust_scratches.png");
+	color: #151515;
+	flex-direction: row-reverse;
+}
+/*gallery page*/
+.gallery-main .sec-1, .gallery-main .sec-2{
+	padding: 5rem 4% 0rem 4%;
+}
+.gallery-main img{
+	max-width: 100%;
+	width: 100%;
+	height: 300px;
+}
+.gallery-main .gallery-row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.gallery-main .img-container p {
+	padding-top: 2rem;
+	padding-bottom: 5rem;
+}
+.about-us-main .card {
+	background-image: url("../img/dust_scratches.png");
+	color: #151515;
+	padding: 0 3rem;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+	box-shadow: 10px 10px 5px #151515;
+}
+/*About Us page styling*/
+.about-us-main svg{
+	padding-bottom: 2rem;
+}
+.about-us-main h3{
+	font-size: 3.125rem;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about-us-main .text-container, .about-us-main svg {
+	display: block;
+	margin: auto;
+}
+.about-us-main article:first-child, .about-us-main article:nth-child(2), .about-us-main article:nth-child(3){
+	margin-bottom: 3rem;
+}
+/*Contact Us page styling*/
+.contact ul li {
+	padding-bottom: 4rem;
+}
+.contact, .business-info {
+	padding-top: 5rem;
+}
+ul svg {
+	margin-right: 1.5rem;
+}
+.child{
+	display: inline;
+}
+.google-maps {
+	overflow: hidden;
+}
+.office-container>div:first-child{
+	padding-bottom: 5rem;
+}
+.contact-main svg path, footer svg path, .home-main svg path {
+	fill: #f8f8ff;
+}
+/*Contact Us page form styling*/
+label {
+	display: block;
+	padding-bottom: 1rem;
+	font-family: 'PT sans', sans-serif;
+	font-weight: bold;
+}
+input:focus {
+	outline: none;
+}
+textarea:focus {
+	outline: none;
+}
+input {
+	height: 4rem;
+	width: 100%;
+	border: none;
+	margin-bottom: 2.5rem;
+	border-radius: 1rem;
+	padding-left: 1rem;
+}
+textarea {
+	resize: none;
+	width: 99%;
+	height: 25rem;
+	border: none;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+.form-container {
+	margin-right: 4%;
+}
+form input[required]:invalid {
+	border: 2px solid red;
+}
+form input[required]:valid {
+	border:2px solid green;
+}
+.contact ul li {
+	display: flex;
+	align-items: center;
+}
+.required:after {
+	content: " *";
+	color: red;
+}
+/*footer styling*/
+footer div:nth-child(2) {
+	padding: 3rem 0;
+}
+footer ul li {
+	display: flex;
+	text-align: left;
+	align-items: center;
+}
+footer ul li:nth-child(1), footer ul li:nth-child(2) {
+	padding-bottom: 25px;
+}
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	background-image: url("../img/diagmonds_@2X.png");
+	justify-content: center;
+	text-align: center;
+	padding: 5rem 0 5rem 0;
+	font-size: 1.6rem;
+	align-items: center;
+}
+@media only screen and (min-width: 750px) {
+   /*header styling*/
+	header .flex-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 3rem 3rem;
+   }
+   /*banner styling*/
+	.banner{
+		height: 450px;
+   }
+	.banner div:first-child {
+		width: 60%;
+		padding: 0 20%;
+		text-align: left;
+   }
+	.contact-main .banner {
+		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/contact-us-desktop.jpg");
+   }
+	.home-main .banner {
+		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/home-banner-desktop.jpg");
+   }
+	.services-main .banner {
+		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/services-banner-desktop.webp");
+   }
+	.about-us-main .banner {
+		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/services-banner-desktop.webp");
+   }
+	.gallery-main .banner {
+		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../img/services-banner-desktop.webp");
+   }
+	h2 {
+		font-size: 3.906rem;
+   }
+	.banner h2 {
+		font-size: 4.883rem;
+   }
+   /*home styling*/
+	.home-main .sec-3 {
+		padding-bottom: 5rem;
+   }
+	.home-main .sec-3 .flex-container img {
+		width: 46%;
+   }
+	.home-main .sec-3 .flex-container .text-container {
+		width: 50%;
+   }
+	.home-main p, .services-main p{
+		font-size: 2rem;
+   }
+	.service-container .text-container {
+		padding-top: 0rem;
+   }
+	.service-container .text-container:nth-child(3), .service-container .text-container:nth-child(4) {
+		padding-top: 5rem;
+   }
+	.service-container>.text-container {
+		flex-basis: 45%;
+   }
+	.service-container .text-container:first-child, .service-container .text-container:nth-child(3) {
+		padding-right: 10%;
+   }
+	.why ul li{
+		font-size: 2.5rem;
+		line-height: 3;
+   }
+	.why{
+		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/why-tablet.jpg");
+   }
+	.home-main .sec-3 h2{
+		padding-top: 0;
+   }
+   /*contact us page styling*/
+	.office-container>div:first-child {
+		padding-right: 3rem;
+		padding-bottom: 0;
+   }
+	.business-info {
+		padding-top: 0;
+   }
+	.contact {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 10rem;
+   }
+	.contact>div {
+		width: 42%;
+   }
+	.office-container {
+		flex-wrap: nowrap;
+		padding: 6rem 0 10rem 0;
+   }
+   /*gallery styling*/
+	.gallery-main img{
+		max-width: 33rem;
+   }
+	.gallery-main .sec-1{
+		padding-top: 10rem;
+   }
+	.gallery-main .sec-2{
+		padding-bottom: 10rem;
+   }
+   /*services styling*/
+	.services-main .row:nth-child(3), .services-main .row:last-child{
+		background-image: url("../img/dust_scratches.png");
+		flex-direction: row-reverse;
+   }
+	.services-main article {
+		padding: 10rem 4%;
+   }
+	.services-main .img-container{
+		width: 60%;
+   }
+	.services-main .text-container{
+		width: 38%;
+   }
+   .services-main img{
+	padding-bottom: 0;
+}
+   /*about us styling*/
+	.about-us-main .sec-1, .about-us-main .sec-3, .home-main .sec-1, .home-main .sec-3 {
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+   }
+	.about-us-main .text-container{
+		width: 65%;
+   }
+   /*footer styling*/
+	footer div:nth-child(2) {
+		padding: 0 2rem 0 2rem;
+   }
+	p{
+		font-size: 2rem;
+   }
+	.card {
+		margin: 0;
+   }
+	.about-us-main .card {
+		width: 40%;
+   }
+	.about-us-main article:nth-child(3){
+		margin-bottom: 0;
+   }
+   .contact-main ul li{
+	   font-size: 2rem;
+   }
+}
+@media only screen and (min-width: 1200px) {
+	body {
+		width: 1200px;
+   }
+   /*banner styling*/
+	.banner {
+		height: 500px;
+   }
+	.toggle-btn {
+		display: none;
+   }
+   /*header styling*/
+	header nav {
+		max-height: 30rem;
+		position: static;
+		width: 60%;
+		overflow: visible;
+   }
+	.menu, header {
+		display: flex;
+		justify-content: space-between;
+   }
+	ul.menu li {
+		flex-grow: 1;
+		flex-shrink: 0;
+		flex-basis: auto;
+		background-image: none;
+		padding: 3.5rem 0 0 0;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+   }
+	.menu li a {
+		padding: 0.5rem;
+   }
+	header a {
+		color: white;
+   }
+	header .flex-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 4.5rem;
+   }
+	header ul {
+		padding-right: 4.5rem;
+   }
+	.form-flex-container {
+		display: flex;
+		justify-content: space-between;
+   }
+	.why {
+		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/why-desktop.jpg");
+   }
+	header ul {
+		padding-right: 4.5rem;
+   }
+	.name {
+		width: 48%;
+		margin-top: 0;
+   }
+	.gallery-main img{
+		max-width: 35rem;
+   }
+	.about-us-main .card {
+		width: 43%;
+   }
+   /*footer styling*/
+	footer div:nth-child(2) {
+		padding: 0 9rem 0 9rem;
+   }
+}
