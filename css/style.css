@@ -1,3 +1,4 @@
+/*html & body styling*/
 html {
 	font-size: 62.5%;
 	color: white;
@@ -171,9 +172,8 @@ svg rect {
 .home-main img {
 	max-width: 100%;
 }
-.home-main h4 {
+.home-main h3 {
 	padding: 2rem 0;
-	font-size: 2rem;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	font-style: italic;
@@ -401,7 +401,26 @@ footer {
 		font-size: 4.883rem;
    }
    /*home styling*/
-	.home-main .sec-3 {
+   .service-container .text-container {
+	padding-top: 0rem;
+}
+.service-container .text-container:nth-child(3), .service-container .text-container:nth-child(4) {
+	padding-top: 5rem;
+}
+.service-container>.text-container {
+	flex-basis: 45%;
+}
+.service-container .text-container:first-child, .service-container .text-container:nth-child(3) {
+	padding-right: 10%;
+}
+.why{
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/why-tablet.jpg");
+}
+.why ul li{
+	font-size: 2.5rem;
+	line-height: 3;
+}
+.home-main .sec-3 {
 		padding-bottom: 5rem;
    }
 	.home-main .sec-3 .flex-container img {
@@ -409,28 +428,6 @@ footer {
    }
 	.home-main .sec-3 .flex-container .text-container {
 		width: 50%;
-   }
-	.home-main p, .services-main p{
-		font-size: 2rem;
-   }
-	.service-container .text-container {
-		padding-top: 0rem;
-   }
-	.service-container .text-container:nth-child(3), .service-container .text-container:nth-child(4) {
-		padding-top: 5rem;
-   }
-	.service-container>.text-container {
-		flex-basis: 45%;
-   }
-	.service-container .text-container:first-child, .service-container .text-container:nth-child(3) {
-		padding-right: 10%;
-   }
-	.why ul li{
-		font-size: 2.5rem;
-		line-height: 3;
-   }
-	.why{
-		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/why-tablet.jpg");
    }
 	.home-main .sec-3 h2{
 		padding-top: 0;
@@ -514,13 +511,6 @@ footer {
 	body {
 		width: 1200px;
    }
-   /*banner styling*/
-	.banner {
-		height: 500px;
-   }
-	.toggle-btn {
-		display: none;
-   }
    /*header styling*/
 	header nav {
 		max-height: 30rem;
@@ -556,23 +546,32 @@ footer {
 	header ul {
 		padding-right: 4.5rem;
    }
+    /*banner styling*/
+	.banner {
+		height: 500px;
+   }
+	.toggle-btn {
+		display: none;
+   }
+
+/*home page styling*/
+   .why {
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/why-desktop.jpg");
+}
+   /*Contact Us page styling*/
 	.form-flex-container {
 		display: flex;
 		justify-content: space-between;
    }
-	.why {
-		background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/why-desktop.jpg");
-   }
-	header ul {
-		padding-right: 4.5rem;
-   }
-	.name {
-		width: 48%;
-		margin-top: 0;
-   }
+   .name {
+	width: 48%;
+	margin-top: 0;
+}
+   /*Gallery styling*/
 	.gallery-main img{
 		max-width: 35rem;
    }
+   /*About Us styling*/
 	.about-us-main .card {
 		width: 43%;
    }
