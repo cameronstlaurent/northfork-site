@@ -289,7 +289,7 @@ input {
 textarea {
 	resize: none;
 	width: 99%;
-	height: 25rem;
+	height: 20rem;
 	border: none;
 	border-radius: 1rem;
 	padding: 1rem;
@@ -329,6 +329,7 @@ ul svg {
 }
 .contact-main svg path, footer svg path, .home-main svg path {
 	fill: #f8f8ff;
+	min-width: 2rem;
 }
 .google-maps{
 	overflow: hidden;
