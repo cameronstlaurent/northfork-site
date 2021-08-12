@@ -337,7 +337,7 @@ ul svg {
     padding-bottom:62.25%;
     position:relative;
     height:0;
-	width: 54rem;
+	width: 540px;
 }
 .map-responsive iframe{
     left:0;
@@ -575,7 +575,7 @@ footer {
 		justify-content: space-between;
    }
    .name {
-	width: 48%;
+	width: 46%;
 	margin-top: 0;
 }
    /*Gallery styling*/
